@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Skills-Web{% endblock %}
+
+{% block content %}
+    <!-- This page needs a form that can capture data about the user's
+    first name, last name, job title, and salary requirements. -->
+    <h1>Application Form</h1>
+    <h3>Welcome to our Application Form page. Please fill out the details below and submit your information. After review, we will contact you. Thank you.</h3>
+
+    <form action="/application" method="POST">
+        <label for="firstname">First Name: </label>
+        <input type="text" name="firstname" id="firstname"><br><br>
+        <label for="lastname">Last Name: </label>
+        <input type="text" name="lastname" id="lastname"><br><br>
+        <label for="salary">Salary Requirement: </label>
+        <input type="number" name="salary" id="salary" min="1"><br><br>
+        <fieldset>
+            <legend>Position Applying For: </legend>
+            <input type="radio" name="position" id="software-engineer" value="Software Engineer">
+            <label for="software-engineer"> Software Engineer </label><br>
+            <input type="radio" name="position" id="qa-engineer" value="QA Engineer">
+            <label for="qa-engineer"> QA Engineer </label><br>
+            <input type="radio" name="position" id="product-manager" value="Product Manager">
+            <label for="product-manager"> Product Manager </label>
+        </fieldset><br><br>
+        <input type="submit">
+    </form>
+{% endblock %}

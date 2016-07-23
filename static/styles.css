@@ -1,0 +1,29 @@
+/* Your styles can go here. */
+h1 {
+    padding: 15px 0 0 20px;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+h3, h4 {
+    padding: 0 0 20px 30px;
+    font-family: serif;
+    font-style: italic;
+}
+form {
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+legend {
+    font-size: 15px;
+    font-weight: bold;
+}
+fieldset {
+    font-size: 12px;
+}
+p {
+    padding: 20px;
+    font-family: serif;
+    font-size: 20px;
+}
